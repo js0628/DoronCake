@@ -7,31 +7,28 @@
     <h1>
         도론 수제 케이크 주문 페이지
     </h1>
-    <form action="https://doron-cake.shirootteok.workers.dev" method="Doron_Cake_PSK" target="mqei2VtHmCaSXWzXjBSGoLaqwklBXBOo">
-    주문자 성함 <input type = "text"><br>
-    연락처 <input type="text"><br>
-    픽업 날짜 <input type="datetime-local"><br>
-    케이크 종류 <select name='케이크 종류'>
+    <form action="https://doron-cake.shirootteok.workers.dev" method="post">
+    주문자 성함 <input name="name" type="text"><br>
+    연락처 <input name="phone" type="text"><br>
+    픽업 날짜 <input name="pickup_date" type="datetime-local"><br>
+    케이크 종류 <select name="cake_type">
         <option value='' selected>-- 선택 --</option>
         <option value='도시락'>도시락</option>
         <option value='1호'>1호</option>
         <option value='2호'>2호</option>
         <option value='마카롱 케이크'>마카롱 케이크</option>
       </select><br>
-      케이크 시트 <select name='케이크 시트'>
+      케이크 시트 <select name="sheet_type">
         <option value='' selected>-- 선택 --</option>
         <option value='일반'>일반</option>
         <option value='초코'>초코</option>
         <option value='레트벨벳'>레드벨벳</option>
         <option value='당근'>당근</option>
       </select><br>
-      레터링 문구 <input type = "text"><br>
-      원하는 테두리 도안 <input type = "image"><br>
-      기타사항 <input type = "text"><br>
-      <input type="submit" value="Submit">
+      레터링 문구 <input name="letters" type="text"><br>
+      원하는 테두리 도안 <input name="image" type="text"><br>
+      기타사항 <input name="etc" type="text"><br>
+      <input type="submit" value="주문하기">
     </form>
 </body>
 </html>
-
-
-
